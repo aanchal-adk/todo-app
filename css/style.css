@@ -1,0 +1,31 @@
+.todo-table{
+  border:2px solid gray;
+  margin:10px;
+}
+
+.todo-table tr{
+  border:2px solid gray;
+}
+.todo-table tr td{
+  width:100px;
+  border:1px solid gray;
+  padding:5px;
+}
+
+.todo-table tr .checkbox{
+  width:20px;
+}
+
+.completed-table{
+  border:2px solid gray;
+  margin:10px;
+}
+
+.completed-table tr{
+  border:2px solid gray;
+}
+.completed-table tr td{
+  width:100px;
+  border:1px solid gray;
+  padding:5px;
+}
