@@ -7,7 +7,6 @@
     <input type="text" ng-model="description"/>
     <button type="submit">add</button>
   </form>
-  <!-- {{title}} {{description}} -->
   <table class="todo-table">
     <tr ng-repeat="item in incompleteList |orderBy:item.id">
       <td class="checkbox"><input type="checkbox" ng-click="setIsComplete(item)"/></td>
@@ -22,8 +21,6 @@
     <tr ng-repeat="item in completedList">
       <td>{{item.title}}</td>
       <td>{{item.description}}</td>
-      <td>{{item.isComplete}}</td>
-      <!-- <td><button ng-click="putNewData(item)">edit</button></td> -->
       <td><button ng-click="deleteItem(item)">delete</button></td>
     </tr>
   </table>
