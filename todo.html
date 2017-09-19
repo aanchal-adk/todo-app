@@ -1,9 +1,9 @@
 <div>
   <h3>TO DO LIST</h3>
   <form ng-submit="addTodo()">
-    <label>title</label>
+    <label>Title</label>
     <input type="text" ng-model="title"/>
-    <label>description</label>
+    <label>Description</label>
     <input type="text" ng-model="description"/>
     <button type="submit">add</button>
   </form>
@@ -22,6 +22,7 @@
     <tr ng-repeat="item in completedList">
       <td>{{item.title}}</td>
       <td>{{item.description}}</td>
+      <td>{{item.isComplete}}</td>
       <!-- <td><button ng-click="putNewData(item)">edit</button></td> -->
       <td><button ng-click="deleteItem(item)">delete</button></td>
     </tr>

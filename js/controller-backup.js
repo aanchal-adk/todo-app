@@ -69,26 +69,3 @@ angular.module('todoApp') // getter method
     },function(error){console.log("error")})
   }
 })
-
-// .controller('updateController',function($scope,$http,$stateParams,$state){
-//   let itemId = $stateParams.itemId;
-//   $http.get(`http://localhost:3000/todos/${itemId}`)
-//   .then(function(response){
-//     console.log(response);
-//     $scope.newTitle=response.data.title;
-//     $scope.newDescription=response.data.description;
-//   })
-  
-//   $scope.updateItem= function(){
-//     let data = {
-//       title: $scope.newTitle,
-//       description: $scope.newDescription,
-//       isComplete:"false"
-//     }
-//     $http.put(`http://localhost:3000/todos/${itemId}`,data)
-//     .then(function(response){
-//       $state.go('todo');
-//     })
-//   }
-// })
-

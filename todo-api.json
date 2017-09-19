@@ -1,22 +1,16 @@
 {
   "todos": [
     {
-      "title": "asdsadfs",
-      "description": "sada",
-      "isComplete": "true",
+      "title": "banana",
+      "description": "babananana",
+      "isComplete": false,
       "id": 1
     },
     {
-      "title": "<aDQD",
-      "description": "<x<x",
-      "isComplete": "true",
+      "title": "catdog",
+      "description": "dogcat",
+      "isComplete": false,
       "id": 2
-    },
-    {
-      "title": "ddd",
-      "description": "xxx",
-      "isComplete": "false",
-      "id": 3
     }
   ]
 }

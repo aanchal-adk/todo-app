@@ -1,21 +1,20 @@
 angular.module('todoApp')
-.controller('updateController',function($scope,$http,$stateParams,$state){
-  const baseUrl='http://10.10.3.82:8848/api';
+.controller('updateController',function($scope,$stateParams,$state,crudService){
+  const baseUrl='http://localhost:3000';
   let itemId = $stateParams.itemId;
-  $http.get(`${baseUrl}/todos/${itemId}`)
+  crudService.get(`${baseUrl}/todos/${itemId}`)
   .then(function(response){
-    // console.log(response.data.data);
-    $scope.newTitle=response.data.data.title;
-    $scope.newDescription=response.data.data.description;
+    $scope.newTitle=response.data.title;
+    $scope.newDescription=response.data.description;
   })
   
   $scope.updateItem= function(){
     let data = {
       title: $scope.newTitle,
       description: $scope.newDescription,
-      iscomplete:"false"
+      isComplete:false
     }
-    $http.put(`${baseUrl}/todos/${itemId}`,data)
+    crudService.put(`${baseUrl}/todos/${itemId}`,data)
     .then(function(response){
       $state.go('todo');
     })
